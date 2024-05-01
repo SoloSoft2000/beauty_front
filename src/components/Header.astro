@@ -1,21 +1,27 @@
 ---
-import '@fontsource/caveat-brush';
+import "@fontsource/caveat-brush";
+import { NavItem } from "./NavItem";
 ---
-<div class="flex flex-col p-2">
-  <div class="flex w-72 relative justify-between items-center">
-    <span ><img src="/logo.jpeg" alt="logo" class="box-border h-24 w-24"></span>
+
+<div class="flex flex-col m-4 p-2">
+  <a
+    class="flex w-72 relative justify-between items-center"
+    href="tel:+972525412604"
+  >
+    <span><img src="/logo.jpeg" alt="logo" class="box-border h-20 w-20" /></span
+    >
     <div class="flex flex-col">
       <h1 class="text-2xl font-brush">SolA-Cosmetic</h1>
-      <p class=" text-base font-sans hover:font-brush"><a href="tel:+972525412604">(052)541-26-04</a></p>
+      <p class="text-base">(052)541-26-04</p>
     </div>
-    
-  </div>
+  </a>
+  <hr class="my-3">
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/posts">Posts</a></li>
-      <li><a href="/about">About me</a></li>
-      <li><a href="/review">Review</a></li>
+      <li><NavItem href="/">Home</NavItem></li>
+      <li><NavItem href="/posts">Posts</NavItem></li>
+      <li><NavItem href="/about">About me</NavItem></li>
+      <li><NavItem href="/review">Review</NavItem></li>
     </ul>
   </nav>
 </div>
