@@ -7,10 +7,9 @@ import { BsInfoSquareFill } from "react-icons/bs";
 import { MdRateReview } from "react-icons/md";
 ---
 
-<div class="flex flex-col m-4 p-2">
-  <a
-    class="flex w-72 relative justify-between items-center"
-    href="tel:+972525412604"
+<div class="flex flex-col">
+  <div
+    class="flex w-80 relative justify-between items-center p-6 mb-5"
   >
     <span><img src="/logo.jpeg" alt="logo" class="box-border h-20 w-20" /></span
     >
@@ -18,11 +17,10 @@ import { MdRateReview } from "react-icons/md";
       <h1 class="text-2xl font-brush">SolA-Cosmetic</h1>
       <p class="text-base">(052)541-26-04</p>
     </div>
-  </a>
-  <hr class="my-3">
+  </div>
   <nav>
-    <ul>
-      <li><NavItem href="/"><BsFillHouseDoorFill />Home</NavItem></li>
+    <ul class="mt-2">
+      <li><NavItem href="/" isActive><BsFillHouseDoorFill />Home</NavItem></li>
       <li><NavItem href="/posts"><HiDocumentDuplicate />Posts</NavItem></li>
       <li><NavItem href="/about"><BsInfoSquareFill />About me</NavItem></li>
       <li><NavItem href="/review"><MdRateReview />Review</NavItem></li>
