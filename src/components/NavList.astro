@@ -1,0 +1,18 @@
+---
+import { NavItem } from "./NavItem";
+import { BsFillHouseDoorFill } from "react-icons/bs";
+import { HiDocumentDuplicate } from "react-icons/hi";
+import { FaInfo } from "react-icons/fa";
+import { MdRateReview } from "react-icons/md";
+import { MdMail } from "react-icons/md";
+---
+
+<nav>
+  <ul class="mt-2">
+    <li><NavItem href="/" isActive><BsFillHouseDoorFill size={28}/>Home</NavItem></li>
+    <li><NavItem href="/posts"><HiDocumentDuplicate size={28}/>Posts</NavItem></li>
+    <li><NavItem href="/about"><FaInfo size={28}/>About me</NavItem></li>
+    <li><NavItem href="/review"><MdRateReview size={28}/>Review</NavItem></li>
+    <li><NavItem href="/contact"><MdMail size={28}/>Contact</NavItem></li>
+  </ul>
+</nav>

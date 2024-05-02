@@ -7,7 +7,7 @@ type NavItemProps = {
 export const NavItem = ({ href, isActive = false, children }: NavItemProps) => {
   const Child = () => {
     return (
-      <div className={`flex justify-between w-64 px-3 py-2 rounded-md`}>
+      <div className={`flex justify-between w-80 px-3 py-2 rounded-md`}>
         {children}
       </div>
     );
@@ -16,7 +16,7 @@ export const NavItem = ({ href, isActive = false, children }: NavItemProps) => {
   return (
     <>
       {isActive ? (
-        <a className="flex justify-center py-2 items-center bg-gray-800 text-[#E3CBBD] duration-300">
+        <a className="flex py-2 justify-center items-center bg-gray-800 text-[#E3CBBD] duration-300">
           <Child />
         </a>
       ) : (
