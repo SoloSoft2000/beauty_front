@@ -1,38 +1,59 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "@fontsource-variable/caveat";
-import '@fontsource/montserrat-alternates';
+// import "@fontsource/montserrat-alternates";
+import { Quotes } from "../components/Quotes";
+
 ---
 
 <BaseLayout>
   <main class="w-full">
-    <section class="flex flex-col justify-center items-center w-full pt-16 pb-10 bg-gradient-to-r from-white from-20% to-[#E3CBBD] to-80% ">
+    <section
+      class="flex flex-col justify-center items-center w-full pt-16 pb-10 bg-gradient-to-r from-white from-20% to-[#E3CBBD] to-80%"
+    >
       <div class="w-4/5">
-      <h1 class="text-6xl w-auto text-center mt-10 mb-3 font-caveat text-[#800000] ">Добро пожаловать в мир красоты и гармонии!</h1>
-      <div class="container flex justify-around text-black mx-5 mb-5 items-center ">
-        <div class="w-1/2">
-          <p class="text-justify font-caveat 2xl:text-4xl xl:text-3xl lg:text-2xl text-[#800000] ">Привет! Я Алена - и я косметолог.
-            Мое стремление помочь каждому человеку обрести внешнюю привлекательность
-            и внутреннюю гармонию. Мое видение красоты основано
-            на индивидуальном подходе к каждому клиенту. Я стремлюсь раскрыть
-            и подчеркнуть естественную красоту каждого человека,
-            помогая ему почувствовать себя уверенно.
-            Со мной вас ждет захватывающее путешествие в мир красоты.</p>
-        </div>   
-          <img class=" saturate-[.85] m-2 w-1/3 shadow-[10px_25px_40px_10px_rgba(128,0,0,0.5)] bg-black rounded-2xl" src="/Alena.jpg" alt="">
+        <h1
+          class="text-6xl w-auto text-center mt-10 mb-3 font-caveat text-[#800000]"
+        >
+          Добро пожаловать в мир красоты и гармонии!
+        </h1>
+        <div
+          class="container flex justify-around text-black mx-5 mb-5 items-center"
+        >
+          <div class="w-1/2">
+            <p
+              class="text-justify font-caveat 2xl:text-4xl xl:text-3xl lg:text-2xl text-[#800000]"
+            >
+              Привет! Я Алена - и я косметолог. Мое стремление помочь каждому
+              человеку обрести внешнюю привлекательность и внутреннюю гармонию.
+              Мое видение красоты основано на индивидуальном подходе к каждому
+              клиенту. Я стремлюсь раскрыть и подчеркнуть естественную красоту
+              каждого человека, помогая ему почувствовать себя уверенно. Со мной
+              вас ждет захватывающее путешествие в мир красоты.
+            </p>
+          </div>
+          <img
+            class="saturate-[.85] m-2 w-1/3 shadow-[10px_25px_40px_10px_rgba(128,0,0,0.5)] bg-black rounded-2xl"
+            src="/Alena.jpg"
+            alt=""
+          />
+        </div>
       </div>
-    </div>
     </section>
-    <section class="w-full text-center py-8 bg-white ">
-      <div class="m-5 p-5 border-4 border-gray-300 rounded-md border-double 2xl:text-2xl xl:text-xl lg:text-lg font-montserrat italic text-[#800000] relative">
-        <div class="absolute -top-3 left-5 text-base px-3 bg-white">Цитаты известных людей</div>
-        "Красота - это луч света в серой повседневности." - <span class="not-italic">Coco Chanel</span>
-      </div>
+    <section class="w-full text-center py-8 bg-white">
+      <Quotes client:load />
     </section>
-    <section class="flex flex-col justify-center items-center w-full pt-16 bg-gradient-to-r from-white from-20% to-[#E3CBBD] to-80% ">
-      <div class="container text-black mx-auto flex flex-col items-center h-2/3">
+    <section
+      class="flex flex-col justify-center items-center w-full pt-16 bg-gradient-to-r from-white from-20% to-[#E3CBBD] to-80%"
+    >
+      <div
+        class="container text-black mx-auto flex flex-col items-center h-2/3"
+      >
         Posts
-        <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200">Ok</button>
+        <button
+          class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+          >Ok</button
+        >
       </div>
     </section>
   </main>
