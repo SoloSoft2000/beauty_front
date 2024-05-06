@@ -9,10 +9,10 @@ import { MdMail } from "react-icons/md";
 
 <nav>
   <ul class="mt-2">
-    <li><NavItem href="/" isActive><BsFillHouseDoorFill size={28}/>Home</NavItem></li>
-    <li><NavItem href="/posts"><HiDocumentDuplicate size={28}/>Posts</NavItem></li>
-    <li><NavItem href="/about"><FaInfo size={28}/>About me</NavItem></li>
-    <li><NavItem href="/review"><MdRateReview size={28}/>Review</NavItem></li>
-    <li><NavItem href="/contact"><MdMail size={28}/>Contact</NavItem></li>
+    <li><NavItem client:only="react" href="/" isActive><BsFillHouseDoorFill size={28}/>Home</NavItem></li>
+    <li><NavItem client:only="react" href="/posts"><HiDocumentDuplicate size={28}/>Posts</NavItem></li>
+    <li><NavItem client:only="react" href="/about"><FaInfo size={28}/>About me</NavItem></li>
+    <li><NavItem client:only="react" href="/review"><MdRateReview size={28}/>Review</NavItem></li>
+    <li><NavItem client:only="react" href="/contact"><MdMail size={28}/>Contact</NavItem></li>
   </ul>
 </nav>

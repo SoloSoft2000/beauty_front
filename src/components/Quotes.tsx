@@ -29,16 +29,18 @@ export const Quotes = () => {
 
   return (
   <div
-    className="m-5 p-5 border-4 border-gray-300 rounded-md border-double
-               2xl:text-2xl xl:text-xl lg:text-lg font-montserrat italic text-[#800000] relative"
+    className="flex justify-between m-5 py-16 px-6 border-4 border-gray-300 rounded-md border-double
+               2xl:text-xl xl:text-lg lg:text-base font-montserrat italic text-[#800000] relative"
   >
     <div className="absolute -top-3 left-5 text-base px-3 bg-white">
       Цитаты известных людей
     </div>
+    <div>
     "{quote.text}" -
-    <span className="not-italic"> {quote.name}</span>
-    <div className="absolute right-2 top-1/3 cursor-pointer">
+    <span className="not-italic"> {quote.name}</span></div>
+    <div className="cursor-pointer">
       <RxUpdate onClick={handleQuoteUpdate}/>
     </div>
+    
   </div>);
 };
