@@ -6,12 +6,10 @@ export default {
 	theme: {
     fontFamily: {
       'brush': ['"Caveat Brush"'],
+      'caveat': ['"Caveat Variable"'],
+      'montserrat': ['"Montserrat Alternates"'],
     },
-		extend: {
-      // fontFamily: {
-      //   serif: ['Caveat Brush', ...defaultTheme.fontFamily.serif],
-      // },
-    },
+		extend: {},
 	},
 	plugins: [],
 }
